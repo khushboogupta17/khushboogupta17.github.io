@@ -42,28 +42,35 @@ $(function () {
     /* =========================================
      * testimonial slider
      *  =======================================*/
-
-    $(".testimonials").owlCarousel({
+  
+    $('.team-slider').owlCarousel({
+        loop: false,            
         nav: false,
-        dots: true,
-        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        smartSpeed: 450,
+        margin: 0,
+
         responsive: {
             0: {
                 items: 1
             },
-            600: {
-                items: 1
+            768: {
+                items: 2
             },
-            1000: {
+            991: {
                 items: 3
             },
             1200: {
-                items: 4
+                items: 3
+            },
+            1920: {
+                items: 3
             }
         }
+
+        
     });
-
-
 
     /* =========================================
      * Leflet map
@@ -318,6 +325,147 @@ function map() {
 
 }
 
+window.onload = InitializeGridFilter;
+
+function DownloadResume() {
+    var response = confirm("Do you want to view the resume?");
+    if (response) {
+        location.href = 'downloads/Khushboo_April2021.pdf'
+    }
+    return false;
+
+};
+
+function InitializeGridFilter() {
+    var buttons = document.getElementById('grid-options');
+    var current = buttons.getElementsByClassName('active');
+    current[0].click();
+    // var mousedown = new Event('mousedown');
+    // current[0].dispatchEvent(mousedown);
+}
+
+function OnFilterButtonPressed(value) {
+    if (value != "all") {
+        var x = document.getElementsByClassName('grid__item');
+
+
+        $(".filter").fadeOut(300).promise().done(function () {
+            $(this).filter('.' + value).fadeIn(100);
+            AddVerticalLines();
+        });
+
+        var i;
+
+        for (i = 0; i < x.length; i++) {
+            if (x[i].classList.contains("show"))
+                x[i].classList.remove("show");
+
+            if (x[i].classList.contains(value)) {
+                x[i].classList.add("show");
+
+            }
+        }
+
+    }
+    else {
+
+        $(".filter").fadeOut(300).promise().done(function () {
+            $(this).fadeIn(100);
+            AddVerticalLines();
+        });
+        var allItems = $(".grid__item");
+        allItems.addClass('show');
+
+    }
+
+
+}
+
+
+
+var btns = document.getElementsByClassName("filter-button");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var buttons = document.getElementById('grid-options');
+        var current = buttons.getElementsByClassName('active');
+        current[0].classList.remove('active');
+        this.classList.add('active');
+        OnFilterButtonPressed($(this).attr('data-filter'));
+    });
+}
+
+function AddVerticalLines() {
+    var gridEle = document.getElementById('grid-list');
+    var activeElements = gridEle.getElementsByClassName("show"), ind;
+    var isMultipleOf = 2;
+
+    var isMobile = false
+
+    if (window.innerWidth < 600)
+        isMobile = true;
+
+
+    for (ind = 0; ind < activeElements.length; ind++) {
+
+        if (activeElements[ind].classList.contains("vertical"))
+            activeElements[ind].classList.remove("vertical");
+
+        if (activeElements[ind].classList.contains("vertical-right"))
+            activeElements[ind].classList.remove("vertical-right");
+
+        var t = ind % isMultipleOf;
+
+        if (t != 0 && !isMobile) {
+            if (activeElements[ind].offsetHeight > activeElements[ind - 1].offsetHeight)
+                activeElements[ind].classList.add("vertical");
+            else activeElements[ind - 1].classList.add("vertical-right");
+        }
+
+        if (isMobile)
+            activeElements[ind].classList.add("vertical");
+    }
+
+}
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+arr = [];
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("grid__img");
+var AchievementsIMg = document.getElementsByClassName("img-fluid");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i = 0; i < img.length; i++) {
+    img[i].onclick = OnModalCick;
+}
+
+for (var i = 0; i < AchievementsIMg.length; i++) {
+    AchievementsIMg[i].onclick = OnModalCick;
+}
+
+function OnModalCick() {
+    modal.style.display = "block";
+    document.querySelector("body").style.overflow = 'hidden';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+    document.querySelector("body").style.overflow = 'visible';
+}
+
+modal.onclick = function () {
+    modal.style.display = "none";
+    document.querySelector("body").style.overflow = 'visible';
+}
+
 $(document).ready(function () {
     // Gets the video src from the data-src on each button
 
@@ -344,12 +492,6 @@ $(document).ready(function () {
 
     // document ready
 });
-
-
-
-
-
-
 
 
 (function ($) {

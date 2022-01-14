@@ -1,19 +1,30 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Khushboo Gupta |Game Developer</title>
-    <meta name="description" content="">
+    <title>Khushboo Gupta | Game Developer</title>
+    <meta name="description"
+        content="Demo of the tutorial on how to re-create a similar effect of the takeitapp.co website." />
+    <meta name="keywords"
+        content="responsive, grid, polaroid, animation, intro, web design, tutorial, responsive images, srcset" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Bebas+Neue&family=Lato:wght@300&family=Pacifico&family=Rock+Salt&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+
     <!-- Google fonts - Roboto + Roboto Slab-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
-   
+
     <!-- animate.css-->
     <link rel="stylesheet" href="vendor/animate.css/animate.css">
     <!-- theme stylesheet-->
@@ -26,32 +37,46 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/kglogo.png">
 
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/style3.css" />
-    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+
+    <!-- <script src="js/modernizr-2.8.3.js"></script> -->
+
+    <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
-    <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+
 
 </head>
+
 <body>
     <!-- Reference item-->
     <!-- navbar-->
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a href="#intro" class="navbar-brand scrollTo"><img src="img/kglogo.png" style="max-width:100%;height:auto;"></a>
-                <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+                <a href="#intro" class="navbar-brand scrollTo"><img src="img/kglogo.png"
+                        style="max-width:50%;height:auto;"></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarcollapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right" style="color:white"><span
+                        class="fa fa-bars"></span></button>
                 <div id="navbarcollapse" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
-                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#about" class="nav-link link-scroll">About</a></li>
-                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#services" class="nav-link link-scroll">Courses</a></li>
-                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#testimonials" class="nav-link link-scroll">Education</a></li>
-                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#references" class="nav-link link-scroll">My work</a></li>
-                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#resume" class="nav-link link-scroll">Resume</a></li>
-                        <!-- <li class="nav-item"  data-toggle="collapse" data-target="#navbarcollapse"><a href="#a" class="nav-link link-scroll">Achievements</a></li> -->
-                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#contact" class="nav-link link-scroll">contact</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#intro"
+                                class="nav-link link-scroll">Home</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#about"
+                                class="nav-link link-scroll">About</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#projects"
+                                class="nav-link link-scroll work">Work</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a
+                                href="#achievements" class="nav-link link-scroll">Achievements</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#contact"
+                                class="nav-link link-scroll">contact</a></li>
+                        <li class="nav-item" data-toggle="collapse" data-target="#navbarcollapse"><a href="#"
+                                target="_blank" onclick="return DownloadResume()" class="nav-link "><i
+                                    class="fa fa-download"></i> Resume</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -69,19 +94,18 @@
 
 
     <!-- Intro Image-->
-    <section id="intro" class="intro-section pb-2">
+    <section id="intro" class="intro-section ">
         <div class="container text-center">
-            <!--<div data-animate="fadeInDown" class="text-shadow mb-5">-->
-
             <div class="thosm">
-                <h1 data-animate="fadeInDown" class="thosm-r1">The Profile of a</h1>
-                <h1 data-animate="slideInUp" class="thosm-r2">Game Developer</h1>
-                <h1 data-animate="slideInUp" class="thosm-r3">Khushboo Gupta</h1>
+                <h1 data-animate="fadeIn" class="thosm-r1">The Game Developer</h1>
+                <h1 data-animate="fadeIn" class="thosm-r2">Khushboo Gupta</h1>
+                <h1 data-animate="fadeIn" class="thosm-r3"> I visualize. I design. I code.</h1>
+
             </div>
 
-           
+
         </div>
-        
+
     </section>
 
 
@@ -93,421 +117,671 @@
             </header>
             <div class="row">
                 <div data-animate="fadeInUp" class="col-lg-6">
-                    <p>Delhi based <strong>Unity Game Developer and Designer</strong> who spends her days and nights with a laptop.</p>
-                    <p>My knack of building creative stuff brought me into game development and this world has lot to explore.I have experience in both <strong>2D and 3D games</strong> .My development approach in the work I create is tilted towards creativity and simplicity.My curiosity to learn new things and develope unique stuff keeps me going.</p>
-                    <p>The best part about my journey? I learnt everything by myself.I watched online videos and then started my experiments on the software.Having no mentor to look up to during errors was definiely a challenging phase,I have even spent two months figuring out very common error.But this all made me who I am,now I help and teach other developers to solve their bugs in game.</p>
-                    <p>I have tried my hands at <strong>Augmented Reality</strong> to understand how it works and made both <strong>PC and mobile games</strong> in unity.For building games my weapons of choice are Unity,Photoshop and Visual Studio.I have done several projects with some of them uploaded on playstore.If I'm (!in front of laptop) then I must be drawing a scene from the world I dreamt of.</p>
+                    <p> Khushboo Gupta is a Delhi, India based <strong>Game Developer and designer</strong> turning
+                        imagination
+                        into reality since 2017. She has experience in <i style="color: rgb(63, 59, 59);"> design
+                            patterns, system design, tools and Augmented
+                            Reality, Unity, Photoshop, Illustrator, Blender</i> or everything she could think of when
+                        game development
+                        comes into the picture.</p>
 
-                    <p>Wish to know more about me,how I got into game development?  <a href="https://fayz.in/link/The_Story_Of_A_Game_Developer">Here's my whole story</a>.</a> </p>
+                    <p>She believes in doing more in less time and will try to automate all redundant tasks that gets on
+                        her nerves. Having game development
+                        as her forte, she takes up any task that ignites her interest and tries to educate herself about
+                        different disciplines</p>
+
+                    <p>She takes time opening her mouth, but once it’s open you will have a hard time closing it. She
+                        keeps sprinkling thought-provoking
+                        statements here and there, so bring in a coffee along if you plan to have a discussion with her.
+                        She lives by the motto </p>
+                    <blockquote class="quote">“If you are finding it difficult, then you are not doing it the right
+                        way.”</blockquote>
+
+                    <p> With her head submerged in wonderland, she sometimes pay visit to real world to make bring life in her dreams.</p>
                 </div>
-                <div data-animate="fadeInUp" class="col-lg-6">
-                    <div class="skill-item">
-                        <div class="logo"><img src="img/logo-unity.png" alt="logo" width="100"></div>
-                        <!--<div class="progress-title">Unity</div>-->
-                        <div class="progress">
-                            <div role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="logo">
-                            <img src="img/logo-ps.png" alt="logo" width="50">
-                        </div>
-                        <div class="progress">
-                            <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
 
-                        <div class="logo"><img src="img/logo-cSharp.png" alt="logo" width="40"></div>
-                        <div class="progress">
-                            <div role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
-                        </div>
-                    </div>
-                   
-                    <div class="skill-item">
-                        <div class="logo"><img src="img/logo-cPlus.png" alt="logo" width="45"></div>
-                        <div class="progress">
-                            <div role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="logo"><img src="img/logo-c.png" alt="logo" width="38"></div>
-                        <div class="progress">
-                            <div role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
+                <div data-animate="fadeInUp" class="col-lg-6 "><img src="img/about.jpg"
+                        alt="This is me - Game Developer" class="image rounded-circle img-fluid"></div>
 
-                        <div class="logo"><img src="img/Blender.jfif" alt="logo" width="40"></div>
-                        <div class="progress">
-                            <div role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
+                <!-- SKILLS -->
+                <div class=" customers-section container " data-animate="fadeInUp">
+                    <div class="col-md-12 ">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="customer"><img src="img/logo-unity.png" title="Unity"
+                                        data-placement="bottom" width="100" data-toggle="tooltip" alt=""
+                                        class="img-fluid d-block mx-auto"></div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="customer"><img src="img/logo-cSharp.png" title="C-Sharp"
+                                        data-placement="bottom" data-toggle="tooltip" alt=""
+                                        class="img-fluid d-block mx-auto"></div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="customer"><img src="img/git.png" title="Git" data-placement="bottom"
+                                        data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="customer"><img src="img/logo-cPlus.png" title="C++" data-placement="bottom"
+                                        data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="customer"><img src="img/logo-ps.png" title="Photoshop"
+                                        data-placement="bottom" data-toggle="tooltip" alt=""
+                                        class="img-fluid d-block mx-auto"></div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="customer"><img src="img/Blender.jfif" title="Blender"
+                                        data-placement="bottom" data-toggle="tooltip" alt=""
+                                        class="img-fluid d-block mx-auto"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - Game Developer" class="image rounded-circle img-fluid"></div>
-            </div>
-        </div>
     </section>
-    <!-- Service-->
-    <section id="services" class="bg-gradient services-section">
-        <div class="container">
-            <header class="text-center">
-                <h2 data-animate="fadeInDown" class="title">Courses</h2>
-            </header>
-            <div class="row services text-center">
 
-                <div data-animate="fadeInUp" class="col-lg-4">
-                    <!--<div class="icon"><i class="fa fa-tachometer"></i></div>-->
-                    <h3 class="heading mb-3 text-400">Game Design and Development specialization by <a href= "https://www.coursera.org/learn/game-development/home/welcome">Michigan State University</a></h3>
-                    <p class="text-left description">This Specialization covers the theoretical and practical foundations of video game production using the Unity 3D game engine.You’ll learn to develop a game concept; prototype, test, and iterate on your ideas; and navigate licensing, marketing, and other business considerations. The specialization builds a solid foundation for industry roles as a gameplay designer, level designer, technical designer, technical artist, programmer, or producer. </p>
-                </div>
-                <div data-animate="fadeInUp" class="col-lg-4">
-                    <!--<div class="icon"><i class="fa fa-tachometer"></i></div>-->
-                    <h3 class="heading mb-3 text-400">C# Survival Guide by <a href ="https://learn.unity.com/course/unity-c-survival-guide">Unity Learn</a> </h3>
-                    <p class="text-left description">It is a series to teach C# concepts from beginner to advanced from arrays to lists and dictionaries.It also shed some light on design conceptsa nd it is a recommended course to become a Unity Certified Developer .</p>
-                </div>
-                <div data-animate="fadeInUp" class="col-lg-4">
-                    <!--<div class="icon"><i class="fa fa-search"></i></div>-->
-                    <h3 class="heading mb-3 text-400">Multiplayer FPS by <a href="https://www.youtube.com/user/Brackeys/playlists?view=1&flow=grid">Brackeys</a></h3>
-                    <p class="text-left description">An intermediate level course to make a multiplayer first person shooter having feature of login using unity Networking.It is completely coded in C# and assets were offered by Brackeys which is backed by Unity.</p>
-                </div>
-                <div data-animate="fadeInUp" class="col-lg-4">
-                    <!--<div class="icon"><i class="fa fa-html5"></i></div>-->
-                    <h3 class="heading mb-3 text-400">Tower Defense by <a href="https://www.youtube.com/user/Brackeys/playlists?view=1&flow=grid">Brackeys</a></h3>
-                    <p class="text-left description">An intermediate level course to make a tower defense game having various turrets to select and place for enemies to spawn.It is completely coded in C# and assets were offered by Brackeys which is backed by Unity.</p>
-                </div>
-              
-               
+    <section id="projects" class=" work bg-gradient">
+        <!-- Portfolio -->
+        <section class="page page--static">
+            <div class="mb-5 text-center">
+                <h2 data-animate="fadeInUp" class="title">Work</h2>
+                <p data-animate="fadeInUp" class="lead">I'm always upto something, sometimes it leads to somthing
+                    presentable and sometimes not. Here's the presentable stuff.</p>
             </div>
-            <!--<hr data-animate="fadeInUp">
-            <div data-animate="fadeInUp" class="text-center">
-                <p class="lead">Would you like to know more or just discuss something?</p>
-                <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p>
-            </div>-->
-        </div>
-    </section>
-    <!-- Testimonials-->
-    <section id="testimonials" class="testimonials-section bg-gray">
-        <div class="container">
-            <header class="text-center mb-2">
-                <h2 data-animate="fadeInUp" class="title">Education<!--<br><span>about me</span>--></h2>
-                <p data-animate="fadeInUp" class="lead">Learning never stops,so here is a glimpse at my learning.</p>
-            </header>
 
-            <div id="content">
+            <div id="grid-options">
+                <ul class="btn-group" data-animate="fadeInUp">
 
-
-                <ul data-animate="fadeInUp" class="timeline">
-                    <li class="event " data-date="2017-2021">
-                        <h3>Under-Graduation</h3>
-                        <p>Btech from GGSIPU with specialization in CSE having aggregate percentge of 84%.</p>
+                    <li class=" margin-inline-large margin-block-large filter-button active" data-filter="all">All</li>
+                    <li class=" margin-inline-large margin-block-large filter-button" data-filter="2D-Game">2D Games
                     </li>
-                    <li class="event" data-date="2017">
-                        <h3>Schooling</h3>
-                        <p>12th and 10th from Bal Bharati Public School,Grh Marg.</p>
+                    <li class=" margin-inline-large margin-block-large filter-button" data-filter="3D-Game">3D Games
                     </li>
-
-
+                    <li class=" margin-inline-large margin-block-large filter-button" data-filter="AR">Augmented Reality
+                    </li>
+                    <li class=" margin-inline-large margin-block-large filter-button" data-filter="Prototype">Prototype
+                    </li>
+                    <li class=" margin-inline-large margin-block-large filter-button" data-filter="Tool">Tool</li>
                 </ul>
             </div>
+            <ul id="grid-list" class="grid cs-style-1 " data-animate="fadeInUp">
+                <li class="grid__item filter 2D-Game">
+                    <div class="grid__link">
 
-        </div>
+                        <figure>
+                            <img class="grid__img " src="img/snowyLaws-1.png" alt="Snowy Laws" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Object-Pooling</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Snowy Laws</h1>
+                            <p>It is a 2D mobile game inspired by color snakes. Using simple
+                                controls of dragging the pencil right and left to escape obstacles, one can easily make
+                                his way out. It has two modes one classic that being infinite mode and one challenging
+                                having upto 30 levels.Complemented with a shop feature, it has various pencils and
+                                markers to choose from to write the game in your own way.Complete code and partial UI is
+                                in-home.
+                                This is one of my commercial projects. </p>
+                            <div class="btn-group" aria-label="Snowy Laws">
+                                <a href="https://play.google.com/store/apps/details?id=com.Gamia.SnowyLaws"
+                                    class="btn-default  margin-inline-large " target="_blank"><i
+                                        class="fa fa-download"></i> Playstore</a>
+                                <a href="https://www.youtube.com/watch?v=smgMvwSBZ3E&t"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i>
+                                    Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 3D-Game AR Prototype">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/snowyLaws-clg.png" alt="Don't Lose...(hope)" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>State Machine pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Don't Lose...(hope)</h1>
+                            <p>It is an AR based 3D puzzle game aimed at mentally ill and depressed
+                                people. In the game someone very dear to player is trapped inside a building and
+                                communicates with player in the form of puzzles so that player can free him/her. The
+                                complete name "Don't lose hope" is revealed in the last stating it's significance in
+                                life too. </p>
+                            <div class="btn-group" aria-label="Don't Lose..(hope)">
+                                <a href="https://www.youtube.com/watch?v=RZf2t5xs7uE"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i>
+                                    Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 3D-Game ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/Spherothon-clg.png" alt="Spherothon" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Object Pooling pattern</li>
+                                    <li>Singleton Pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Spherothon</h1>
+                            <p>Spherothon is a 3D mobile casual game available on google playstore. It has
+                                simple but engaging controls of right and left swipe to cross the levels. A game with a
+                                casual theme keeps on
+                                getting challenging after every three levels. All the coding and designing are my
+                                attempts on Unity and
+                                Visual Studio. </p>
+                            <div class="btn-group" aria-label="Spherothon">
+                                <a href="https://play.google.com/store/apps/details?id=com.Gamia.Spherothon&hl=en"
+                                    class="btn-default  margin-inline-large " target="_blank"><i
+                                        class="fa fa-download"></i>
+                                    Playstore</a>
+                                <a href="https://www.youtube.com/watch?v=sgDr_7i8heE"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 2D-Game ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/ColorPencil-clg.png" alt="Color Pencil" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Object Pooling pattern</li>
+                                    <li>Singleton Pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Color Pencil</h1>
+                            <p>It is a 2D mobile game inspired by color snakes. Using simple controls of
+                                dragging the pencil right and left to escape obstacles one can easily make his way out.
+                                It has two
+                                modes one classic that being infinite mode and one challenging having upto 30 levels. It
+                                is
+                                complemented with a shop feature having various pencils and markers to choose from to
+                                write the game
+                                in your own way. </p>
+                            <div class="btn-group" aria-label="Color Pencil">
+                                <a href="https://github.com/khushboogupta17/Color-Pencil"
+                                    class="btn-default  margin-inline-large " target="_blank"><i class="fa fa-bars"></i>
+                                    Github</a>
+                                <a href="https://www.youtube.com/watch?v=cwyaS5pys8A"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 3D-Game ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/TowerDefense-full.png" alt="Tower Defense" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Flyweight pattern</li>
+                                    <li>Object Pooling pattern</li>
+                                    <li>Singleton Pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Tower Defense</h1>
+                            <p>It is a 3D real time strategy game where one has to survive the waves of enemies. One
+                                have
+                                various types of turrets to choose from and place them within 20 seconds window, one
+                                can also upgrade or sell the turret. I learnt this game from one of the tutorials of
+                                Brackeys. All the
+                                code and graphics were provided by him. </p>
+                            <div class="btn-group" aria-label="Tower Defense">
+                                <a href="https://github.com/khushboogupta17/TowerDefense"
+                                    class="btn-default  margin-inline-large " target="_blank"><i class="fa fa-bars"></i>
+                                    Github</a>
+                                <a href="https://www.youtube.com/watch?v=hDdQ1_hmbZw&t"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 3D-Game ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/MultiplayerFPS-full.png" alt="Multiplayer FPS" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Command pattern</li>
+                                    <li>Singleton Pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Multiplayer FPS</h1>
+                            <p>It is a 3D real time strategy game multiplayer game set in an arena with a
+                                login and Create or Join room feature. The one who could kill all the other members wins
+                                the game. Matchmaking is done by obsoltete uNet of Unity. I
+                                learnt this game from one of the tutorials of Brackeys. All the code and graphics were
+                                provided by
+                                him. </p>
+                            <div class="btn-group" aria-label="Multiplayer FPS">
+                                <a href="https://github.com/khushboogupta17/Multiplayer-FPS"
+                                    class="btn-default  margin-inline-large " target="_blank"><i class="fa fa-bars"></i>
+                                    Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 3D-Game ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/Abyss-clg.png" alt="Abyss" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Singleton Pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Abyss</h1>
+                            <p>It is a puzzle game where player is trapped inside the room and (s)he needs to
+                                solve various puzzles to escape out. It aimed at nurturing curiosity in players and
+                                increasing their
+                                imagination. It was build by 5 people for Unite India Hackathon 2019, bagging second
+                                runner up
+                                position among 400+ submissions. </p>
+                            <div class="btn-group" aria-label="Abyss">
+                                <a href="https://www.youtube.com/watch?v=nqEGoFYCHlg"
+                                    class="btn-default  margin-inline-large " target="_blank"><i
+                                        class="fa fa-video-camera"></i>
+                                    Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter Tool ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/RPGGameInventory-2.png" alt="RPG Game Inventory" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Observer Pattern</li>
+                                    <li>Scriptable Objects</li>
+                                    <li>DOTween</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>RPG Game Inventory</h1>
+                            <p>It is an inventory tool where one can select from different options of guns and see their
+                                properties, name and a short description on it.
+                                On clicking the particular gun card its 3D model is also visible in the side. It's a
+                                tool which can be used to showcase any type of inventory.
+                                Its design and 3D models have been removed from the github due to copyright issues, but
+                                one is free to use code following github's license. </p>
+                            <div class="btn-group" aria-label="RPG Game Inventory">
+                                <a href="https://github.com/khushboogupta17/RPG-game-Inventory-Tool"
+                                    class="btn-default  margin-inline-large "><i class="fa fa-github"></i> Github</a>
+                                <a href="https://www.youtube.com/watch?v=TeYTZ2nAWis"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter Prototype AR ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/BeverageMarketing-clg.png" alt="Beverage Marketing" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Google AR Core</li>
+                                    <li>DoTween</li>
+                                    <li>Image Recognition</li>
+                                    <li>Plane Detection</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Beverage Marketing</h1>
+                            <p>The beverage marketing app trying to market it’s new products using latest Augmented
+                                Reality technology
+                                giving users a refreshing wave of air. It allows users to visualize the new products and
+                                read about it
+                                within app and interact with it. It can used as interactive menu to showcase the
+                                highlights on any cafe or restaurant. </p>
+                            <div class="btn-group" aria-label="Beverage Marketing">
+                                <a href="https://github.com/khushboogupta17/Beverage-Marketing-AR-app"
+                                    class="btn-default  margin-inline-large " target="_blank"><i
+                                        class="fa fa-github"></i> Github</a>
+                                <a href="https://www.youtube.com/watch?v=ByGgxsjGyMU"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 2d-Game ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/TicTacToe-clg.png" alt="Tic-Tac-Toe" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>Mini-max Algo</li>
+                                    <li>DoTween</li>
+                                    <li>State pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Tic Tac Toe</h1>
+                            <p>It is Player vs AI Tic tac toe built on minimax algorithm.It starts with a spinner screen
+                                where first turn is decided wherever spinner lands.
+                                This leads to game screen where on playing 3 games winner will be decided. With every
+                                win, score of 1 gets added in the Winner's bag and if it's a tie
+                                then both the players are awarded with 0.5 each. </p>
+                            <div class="btn-group" aria-label="Tic Tac Toe">
+                                <a href="https://github.com/khushboogupta17/Tic-Tac-Toe"
+                                    class="btn-default  margin-inline-large " target="_blank"><i
+                                        class="fa fa-github"></i> Github</a>
+                                <a href="https://www.youtube.com/watch?v=YG30ZMTfKCo"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 2d-Game Prototype ">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/BYN-clg.png" alt="Beggar your Neighbour" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>MVC Pattern</li>
+                                    <li>DoTween</li>
+                                    <li>Scriptable Objects</li>
+                                    <li>Observer pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Beggar your Neighbour</h1>
+                            <p>Beggar Your Neighbor is an easy-to-learn card game that can be enjoyed by two or more
+                                players. Eliminate your
+                                opponent’s cards to win this game. If encountered an Ace or face card the other player
+                                has certain number of
+                                chances to counter the played card, if other player fails then whole played deck becomes
+                                part of the player
+                                who played an Ace or Face card. To get all the rules, you can checkout the video <a
+                                    href="https://www.youtube.com/watch?v=A9zYqvS39AY&t">here</a></p>
+                            <div class="btn-group" aria-label="Tic Tac Toe">
+                                <a href="https://github.com/khushboogupta17/Beggar-Your-Neighbour"
+                                    class="btn-default  margin-inline-large " target="_blank"><i
+                                        class="fa fa-github"></i> Github</a>
+                                <a href="https://www.youtube.com/watch?v=WAq0-5lTVMk"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="grid__item filter 2d-Game Prototype">
+                    <div class="grid__link">
+
+                        <figure>
+                            <img class="grid__img " src="img/PizzaGame-1.png" alt="Pizza Game" />
+                            <!-- <div class="tag">2D Game</div> -->
+                            <figcaption>
+                                <h3>Tools/Patterns Used</h3>
+
+                                <ul class="text-center">
+                                    <li>Unity</li>
+                                    <li>Visual Studio</li>
+                                    <li>C#</li>
+                                    <li>DoTween</li>
+                                    <li>Singleton Pattern</li>
+                                </ul>
+
+                            </figcaption>
+                        </figure>
+                        <div class="grid__item-title">
+                            <h1>Pizza Game</h1>
+                            <p>It is a Pizza cutting educational game aimed to teach the concept of fractions to user.
+                                Here player is asked to cut the Pizza in such a way
+                                that (s)he is able to serve the customer as per what customer asked. It was a quick game
+                                built in 2 days to explain the concept. </p>
+                            <div class="btn-group" aria-label="Pizza game">
+                                <a href="https://github.com/khushboogupta17/Pizza-Making--2D-Unity-Game"
+                                    class="btn-default  margin-inline-large " target="_blank"><i
+                                        class="fa fa-github"></i> Github</a>
+                                <a href="https://www.youtube.com/watch?v=LNzND9rJDvE"
+                                    class="btn-default margin-inline-large" target="_blank"><i
+                                        class="fa fa-video-camera"></i> Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+        </section>
     </section>
-   
-   
-    <section id="references" class="bg-gradient">
 
-        <!--<div class="container">-->
-        <!--<div class="col-sm-12">-->
-        <div class="mb-5 text-center">
-            <h2 data-animate="fadeInUp" class="title">My work</h2>
-            <p data-animate="fadeInUp" class="lead">I have worked on many project,here's the list.</p>
-        </div>
-
-
-
-
-
-        <div id="wrapper">
-            <section>
-
-
-                <header>
-                    <h3 data-animate="fadeInUp">Spherothon</h3>
-                    <p data-animate="fadeInUp">Spherothon is a 3D mobile casual game available at google playstore.It has simple controls of right and left swipe to cross the levels.A game with a simple theme keeps on getting challenging after every three levels.All the coding and designing is done by me Unity and Visual Studio.</p>
-
-
-
-                    <div data-animate="fadeInUp">
-                        <button type="button" class="btn btn-outline-light video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/sgDr_7i8heE" data-target="#myModal">
-                            <i class="fa fa-video-camera"></i> Video
-                        </button>
-
-                        <a href="https://play.google.com/store/apps/details?id=com.Gamia.Spherothon&hl=en" class="btn btn-outline-light link-scroll"><i class="fa fa-download"></i> Download</a>
-
-
-
-                    </div>
-                </header>
-                <div data-animate="fadeInUp" class="content">
-                    <div class="gallery">
-                        <a href="img/spherothonbig-1.png" class="portrait"><img src="img/spherothonbig-1.png" alt="" /></a>
-                        <a href="img/spherothonbig-3.png" class="portrait"><img src="img/spherothonbig-3.png" alt="" /></a>
-                        <a href="img/spherohtonbig-2.png" class="landscape"><img src="img/spherothonbig-2.png" alt="" /></a>
-
-                    </div>
-                </div>
-
-
-
-
-
-
-            </section>
-            <section>
-
-                <header>
-                    <h3 data-animate="fadeInUp">Color Pencil</h3>
-                    <p data-animate="fadeInUp">It is a 2D mobile game inspired by color snakes.Using simple controls of dragging the pencil right and left to escape obstacles,one can easily make his way out.It has two modes one classic that being infinite mode and one challenging having upto 30 levels.It is complemented with a shop feature having various pencils and markers to choose from to write the game in your own way.All the graphics were provided by the designer and code was written by me.This was one of my commercial projects.  </p>
-                    <div data-animate="fadeInUp">
-                        <button type="button" class="btn btn-outline-light video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/cwyaS5pys8A" data-target="#myModal">
-                            <i class="fa fa-video-camera"></i> Video
-                        </button>
-                        <a href="https://github.com/khushboogupta17/Color-Pencil" class="btn btn-outline-light link-scroll"><i class="fa fa-bars"></i> View Project</a>
-
-
-                    </div>
-
-                </header>
-
-                <div data-animate="fadeInUp" class="content">
-                    <div class="gallery">
-                        <a href="img/ColorPencil-1.png" class="portrait"><img src="img/ColorPencil-1.png" alt="" /></a>
-                        <a href="img/ColorPencil-3.png" class="portrait"><img src="img/ColorPencil-3.png" alt="" /></a>
-                        <a href="img/ColorPencil-2.png" class="portrait"><img src="img/ColorPencil-2.png" alt="" /></a>
-                        <a href="img/ColorPencil-4.png" class="portrait"><img src="img/ColorPencil-4.png" alt="" /></a>
-                    </div>
-                </div>
-
-
-
-            </section>
-            <section>
-
-                <header>
-                    <h3 data-animate="fadeInUp">Snowy Laws</h3>
-                    <p data-animate="fadeInUp">It is a 2D side scroller mobile game with simple controls like jump and slide.It has both challenge and endless mode with increasing difficulties as player proceeds.In this game player has to interact with bots and vehicles to complete the tasks which are mandatory to qualify the level.Majority of graphics and all the code is my work.This was one of my commercial projects.  </p>
-
-                    <div data-animate="fadeInUp">
-                        <button type="button" class="btn btn-outline-light video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/smgMvwSBZ3E" data-target="#myModal">
-                            <i class="fa fa-video-camera"></i> Video
-                        </button>
-
-                        <a href="https://play.google.com/store/apps/details?id=com.Gamia.SnowyLaws" class="btn btn-outline-light link-scroll"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                </header>
-                <div data-animate="fadeInUp" class="content">
-                    <div class="gallery">
-                        <a href="img/snowyLaws-1.png" class="landscape"><img src="img/snowyLaws-1.png" alt="" /></a>
-                        <a href="img/snowyLaws-3.png" class="landscape"><img src="img/snowyLaws-3.png" alt="" /></a>
-                        <a href="img/snowyLaws-2.png" class="landscape"><img src="img/snowyLaws-2.png" alt="" /></a>
-
-                    </div>
-                </div>
-
-
-
-            </section>
-
-
-            <section>
-
-                <header>
-                    <h3 data-animate="fadeInUp">Cube-a-thon</h3>
-                    <p data-animate="fadeInUp">It is a 3D infinite runner PC game.It can be controlled with left and right buttons to save the cube from hitting the obstacles.I learned this game in one of the courses of Brackeys for starting the game development. </p>
-                    <div data-animate="fadeInUp">
-                        <button type="button" class="btn btn-outline-light video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/8snVEiR58Fc" data-target="#myModal">
-                            <i class="fa fa-video-camera"></i> Video
-                        </button>
-                    </div>
-                    <a data-animate="fadeInUp" href="https://github.com/khushboogupta17/Cube-a-thon" class="btn btn-outline-light link-scroll"><i class="fa fa-bars"></i> View Project</a>
-
-
-                </header>
-                <div data-animate="fadeInUp" class="content">
-                    <div class="gallery">
-                        <a href="img/cube-a-thon-1.png" class="portrait"><img src="img/cube-a-thon-1.png" alt="" /></a>
-                        <a href="img/cube-a-thon-3.png" class="portrait"><img src="img/cube-a-thon-3.png" alt="" /></a>
-                        <a href="img/cube-a-thon-2.png" class="landscape"><img src="img/cube-a-thon-2.png" alt="" /></a>
-
-
-                    </div>
-                </div>
-
-
-            </section>
-
-            <section>
-
-                <header>
-                    <h3 data-animate="fadeInUp">Tower Defense</h3>
-                    <p data-animate="fadeInUp">It is a 3D real time strategy game where you have to survive the waves of enemies.You have various types of turrets to choose from and place them within 20 seconds window,one can also upgrade or sell the turret.I learnt this game from one of the tutorials of Brackeys.All the code and graphics were provided by him.</p>
-                    <div data-animate="fadeInUp">
-                        <button type="button" class="btn btn-outline-light video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/hDdQ1_hmbZw" data-target="#myModal">
-                            <i class="fa fa-video-camera"></i> Video
-                        </button>
-                    </div>
-
-
-                    <a data-animate="fadeInUp" href="https://github.com/khushboogupta17/TowerDefense" class="btn btn-outline-light link-scroll"><i class="fa fa-bars"></i> View Project</a>
-
-
-                </header>
-                <div data-animate="fadeInUp" class="content">
-                    <div class="gallery">
-                        <a href="img/TowerDefense-1.png" class="landscape"><img src="img/TowerDefense-1.png" alt="" /></a>
-                        <a href="img/TowerDefense-2.png" class="landscape"><img src="img/TowerDefense-2.png" alt="" /></a>
-                        <a href="img/TowerDefense-3.png" class="landscape"><img src="img/TowerDefense-3.png" alt="" /></a>
-
-
-                    </div>
-                </div>
-
-
-            </section>
-
-            <section>
-
-                <header>
-                    <h3 data-animate="fadeInUp">Multiplayer FPS</h3>
-                    <p data-animate="fadeInUp">It is a 3D real time strategy game multiplayer game set in an arena with a login and Create or Join room feature.The one who could kill all the other members wins the game.I learnt this game from one of the tutorials of Brackeys.All the code and graphics were provided by him.</p>
-                    <a data-animate="fadeInUp" href="" class="btn btn-outline-light link-scroll"><i class="fa fa-video-camera"></i> Video</a>
-                    <a data-animate="fadeInUp" href="https://github.com/khushboogupta17/Multiplayer-FPS" class="btn btn-outline-light link-scroll"><i class="fa fa-bars"></i> View Project</a>
-
-
-                </header>
-                <div data-animate="fadeInUp" class="content">
-                    <div class="gallery">
-
-                        <a href="img/multiplayerFps-1.png" class="landscape"><img src="img/multiplayerFps-1.png" alt="" /> </a>
-                        <a href="img/multiplayerFps-2.png" class="landscape"><img src="img/multiplayerFps-2.png" alt="" /> </a>
-                        <a href="img/multiplayerFps-3.png" class="landscape"><img src="img/multiplayerFps-3.png" alt="" /></a>
-
-
-                    </div>
-
-
-
-                </div>
-            </section>
-
-            <section>
-
-                <header>
-                    <h3 data-animate="fadeInUp">Abyss</h3>
-                    <p data-animate="fadeInUp">It is a puzzle game where player is trapped inside the room and he needs to solve various puzzles to escape out.it aimed at building curiosity in players and increasing their imagination.It was build by 5 people for Unite India Hackathon 2019,bagging second runner up position.</p>
-                    <div data-animate="fadeInUp">
-                        <button type="button" class="btn btn-outline-light video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/nqEGoFYCHlg" data-target="#myModal">
-                            <i class="fa fa-video-camera"></i> Video
-                        </button>
-                    </div>
-                   
-
-
-                </header>
-                <div data-animate="fadeInUp" class="content">
-                    <div class="gallery">
-
-                        <a href="img/Abyss-1.png" class="portrait"><img src="img/Abyss-1.png" alt="" /> </a>
-                        <a href="img/Abyss-2.png" class="portrait"><img src="img/Abyss-2.png" alt="" /> </a>
-                        <a href="img/Abyss-3.png" class="landscape"><img src="img/Abyss-3.png" alt="" /></a>
-
-
-                    </div>
-
-
-
-                </div>
-            </section>
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-
-
-                        <div class="modal-body">
-
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+    <section id="achievements" class="achievements-section bg-gray ">
+        <header class="text-center">
+            <h2 data-animate="fadeInDown" class="title">Achievements</h2>
+            <p data-animate="fadeInUp" class="lead">Let's call it the things I'm proud of.</p>
+        </header>
+        <div data-animate="fadeInUp" class="testimonial-box">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="team-slider owl-carousel">
+                            <div id="item" class="single-box text-center">
+                                <div class="img-area"><img alt="Unite India 2019" class="img-fluid "
+                                        src="img/UniteIndia2019.jpg"></div>
+                                <div class="info-area">
+                                    <h1 class="text-small">Unite India 2019</h1>
+                                    <p>Bagged 2nd runner up position at Unite India 2019 for our game Abyss among 400+
+                                        entries from individuals to professional studios.</p><a
+                                        href="https://twitter.com/Unity3DIndia/status/1194994092981157890"
+                                        target="_blank" class="btn-default light-color">Learn More</a>
+                                </div>
+                            </div>
+                            <div id="item" class="single-box text-center vertical-gradient">
+                                <div class="img-area"><img alt="The Tour 2020 Challenge by Unity" class="img-fluid "
+                                        src="img/TheTour2020.png"></div>
+                                <div class="info-area">
+                                    <h1 class="text-small">The Tour 2020 Challenge by Unity</h1>
+                                    <p>Don't Lose..(hope) was selected as the Best AR in Unity's The Tour 2020 organized
+                                        by Unity Africa.</p><a href="https://www.youtube.com/watch?v=dFegE5VD7rs"
+                                        target="_blank" class="btn-default light-color">Learn More</a>
+                                </div>
+                            </div>
+                            <div id="item" class="single-box text-center vertical-gradient">
+                                <div class="img-area"><img alt="Women In Games" class="img-fluid "
+                                        src="img/WomenInGamesAward.png"></div>
+                                <div class="info-area">
+                                    <h1 class="text-small">Women In Games</h1>
+                                    <p>Won University/College student portfolio award at WIG Global awards</p><a
+                                        href="https://twitter.com/wigj/status/1439298062791462916" target="_blank"
+                                        class="btn-default light-color">Learn More</a>
+                                </div>
+                            </div>
+                            <div id="item" class="single-box text-center vertical-gradient">
+                                <div class="img-area"><img alt="Grace Hopper Celebration India Student Scholarship"
+                                        class="img-fluid " src="img/vGHCIScholarship.png"></div>
+                                <div class="info-area">
+                                    <h1 class="text-small">GHC India Student Scholarship</h1>
+                                    <p>Felicitated with Virtual Grace Hopper Celebration student Scholarship of 2021</p>
+                                    <a href="https://twitter.com/wigj/status/1439298062791462916" target="_blank"
+                                        class="btn-default light-color">Learn More</a>
+                                </div>
+                            </div>
+                            <div id="item" class="single-box text-center vertical-gradient">
+                                <div class="img-area"><img alt="Interview at Fayz" class="img-fluid "
+                                        src="img/GDInterviewFayz.png"></div>
+                                <div class="info-area">
+                                    <h1 class="text-small">Interview at Fayz</h1>
+                                    <p>Here is the interview gist of how I became a game developer from being a person
+                                        who used run away from laptops/computers.</p>
+                                    <a href="https://fayz.in/link/The_Story_Of_A_Game_Developer" target="_blank"
+                                        class="btn-default light-color">Learn More</a>
+                                </div>
                             </div>
 
-
+                            <div id="item" class="single-box text-center vertical-gradient">
+                                <div class="img-area"><img alt="Mentor" class="img-fluid " src="img/MentorshipImg.jpg">
+                                </div>
+                                <div class="info-area">
+                                    <h1 class="text-small">Mentor</h1>
+                                    <p>Mentored 150+ students by giving session in Universities on game development and
+                                        mentoring in hackathons.</p>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-        <!--Resume-->
-         <section id="resume" class="resume-section bg-gray ">
-             <div class="container">
-                 <header class="text-center">
-                     <h2 data-animate="fadeInDown" class="title">Resume</h2>
-                 </header>
-                 <div class="text-center" data-animate="fadeInUp">
-                     <img src="img/resume.png" style="max-width:100%;height:auto;">
-                     <div class="col-md-12 text-center video-btn">
-                         <a href="Khushboo_March2021.pdf" download class="btn"><i class="fa fa-download"></i> Download</a>
-                     </div>
-                 </div>
-                
-             </div>
 
-         </section>
 
-       
-        <!-- <section id="Achievements" class="customers-section bg-gray">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="customer"><img src="img/customers/logo-1.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="customer"><img src="img/customers/logo-2.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="customer"><img src="img/customers/logo-3.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="customer"><img src="img/customers/logo-4.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="customer"><img src="img/customers/logo-5.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="customer"><img src="img/customers/logo-6.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    -->
     <!-- Contact-->
     <section id="contact" data-animate="fadeInUp" class="contact-section contact bg-gradient">
-
-
-
-
         <div class="container">
             <header class="text-center">
-                <h2 class="title">Contact me</h2>
+                <h2 class="title">Contact</h2>
             </header>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -515,10 +789,11 @@
                         <div class="messages"></div>
                         <div class="controls">
                             <div class="row">
-
-                                <p class="text-big">Minding a project and think I can be of some help or just wished to say Hi? </p>
-                                <div class="col-md-12 text-center">
-                                    <h1 class="btn btn-outline-primary-contactme"><a href="mailto:khushboofromindia&#64;gmail.com?subject=KGA100%20:">Send email</a></h1>
+                                <p class="text-center">I'm all ears for adventures. Have an exciting project where you need some help?
+                                    Send me over a message, and let's chat. </p>
+                                <div class="col-md-12 text-center margin-block-large">
+                                    <a class="btn-default"
+                                        href="mailto:khushboofromindia&#64;gmail.com?subject=KGA100%20:">Send email</a>
                                 </div>
                             </div>
                         </div>
@@ -533,14 +808,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-lg-left">
-                    <p class="social"><a href="https://github.com/khushboogupta17" class="external github wow fadeInUp"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/khushboogupta17" data-wow-delay="0.2s" class="external linkedin wow fadeInUp"><i class="fa fa-linkedin"></i></a><a href="mailto:khushboofromindia&#64;gmail.com?subject=KGA100%20:" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a></p>
+                    <p class="social"><a href="https://github.com/khushboogupta17"
+                            class="external github wow fadeInUp"><i class="fa fa-github"></i></a><a
+                            href="https://www.linkedin.com/in/khushboogupta17" data-wow-delay="0.2s"
+                            class="external linkedin wow fadeInUp"><i class="fa fa-linkedin"></i></a><a
+                            href="mailto:khushboofromindia&#64;gmail.com?subject=KGA100%20:" data-wow-delay="0.6s"
+                            class="email wow fadeInUp"><i class="fa fa-envelope"></i></a></p>
                 </div>
                 <!-- /.6-->
                 <!--<div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
                     <p>© 2018 Your name goes here. All rights reserved.</p>-->
             </div>
             <div class="col-12 mt-4">
-                <p class="template-bootstrapious">Last Updated <strong>July,2020</strong></p>
+                <p class="template-bootstrapious text-sm-center">Last Updated <strong>Dec, 2021</strong></p>
 
             </div>
         </div>
@@ -550,16 +830,12 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery.cookie/jquery.cookie.js"></script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script> -->
     <script src="js/front.js"></script>
-
-
-
-
-  
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
 </body>
+
 </html>

@@ -6,6 +6,7 @@
     top: 0px;
     left: 0px;
     z-index: 0;
+	list-style: none;
 }
     .cb-slideshow:after {
         content: '';
@@ -22,6 +23,7 @@
     background-repeat: none;
     opacity: 0;
     z-index: 0;
+	list-style: none;
 	-webkit-backface-visibility: hidden;
     -webkit-animation: imageAnimation 36s linear infinite 0s;
     -moz-animation: imageAnimation 36s linear infinite 0s;
@@ -34,6 +36,7 @@
     position: relative;
     bottom: 30px;
     left: 0px;
+	list-style: none;
     width: 100%;
     text-align: center;
     opacity: 0;
