@@ -72,6 +72,35 @@ $(function () {
         
     });
 
+    checkClasses();
+    $('.team-slider').on('translated.owl.carousel', function(event) {
+        checkClasses();
+    });
+
+    function checkClasses(){
+        var total = $('.team-slider .owl-stage .owl-item.active').length;
+        
+        $('.team-slider .owl-stage .owl-item').each(function(index){
+            $(this).removeClass('vertical-gradient');
+        });
+        // $('.team-slider .owl-stage .owl-item').removeClass('firstActiveItem lastActiveItem');
+        
+        $('.team-slider .owl-stage .owl-item.active').each(function(index){
+            if (index === 0) {
+                // this is the first one
+                $(this).removeClass('vertical-gradient');
+                return;
+            }
+            // if (index === total - 1 && total>1) {
+            //     // this is the last one
+            //     $(this).removeClass('vertical-gradient');
+            //     return;
+            // }
+         $(this).addClass('vertical-gradient');
+
+        });
+    }
+
     /* =========================================
      * Leflet map
      *  =======================================*/
@@ -325,7 +354,7 @@ function map() {
 
 }
 
-window.onload = InitializeGridFilter;
+
 
 function DownloadResume() {
     var response = confirm("Do you want to view the resume?");
@@ -336,13 +365,7 @@ function DownloadResume() {
 
 };
 
-function InitializeGridFilter() {
-    var buttons = document.getElementById('grid-options');
-    var current = buttons.getElementsByClassName('active');
-    current[0].click();
-    // var mousedown = new Event('mousedown');
-    // current[0].dispatchEvent(mousedown);
-}
+
 
 function OnFilterButtonPressed(value) {
     if (value != "all") {
