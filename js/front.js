@@ -48,7 +48,7 @@ $(function () {
         nav: false,
         autoplay: true,
         autoplayTimeout: 8000,
-        smartSpeed: 450,
+        smartSpeed: 200,
         margin: 0,
 
         responsive: {
@@ -359,7 +359,7 @@ function map() {
 function DownloadResume() {
     var response = confirm("Do you want to view the resume?");
     if (response) {
-        location.href = 'downloads/Khushboo_April2021.pdf'
+        location.href = 'downloads/Khushboo_Aug2023.pdf'
     }
     return false;
 
